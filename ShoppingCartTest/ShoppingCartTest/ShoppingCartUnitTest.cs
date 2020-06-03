@@ -1,8 +1,7 @@
-﻿using System;
-using System.Linq;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using ShoppingCartProject.Models;
 using ShoppingCartProject.Utility;
+using System.Linq;
 
 namespace ShoppingCartTest.ShoppingCartTest
 {
@@ -74,8 +73,8 @@ namespace ShoppingCartTest.ShoppingCartTest
             ShoppingCart cart = new ShoppingCart();
             cart.AddItem(apple, 3);
             cart.AddItem(almond, 1);
-            
-            double originalCartPrice= cart.GetBaseTotalAmount();
+
+            double originalCartPrice = cart.GetBaseTotalAmount();
 
             Assert.AreEqual(450, originalCartPrice);
         }

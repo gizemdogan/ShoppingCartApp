@@ -33,6 +33,7 @@ namespace ShoppingCartProject
 
             IShoppingCart cart = new ShoppingCart();
             cart.AddItem(apple, 3);
+            cart.AddItem(apple, 1);
             cart.AddItem(almond, 1);
 
             cart.ApplyDiscounts(campaign1, campaign2, campaign3);

@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using ShoppingCartProject.Interfaces;
 using ShoppingCartProject.Models;
+using System.Collections.Generic;
 
 namespace ShoppingCartTest.CategoryTest
 {
@@ -13,7 +12,7 @@ namespace ShoppingCartTest.CategoryTest
         public void GetParentCategoriesTest()
         {
             List<Category> categories = new List<Category>();
-            
+
             Category parentCategory = new Category("Food&Drinks");
             Category category = new Category("Food")
             {
@@ -22,7 +21,7 @@ namespace ShoppingCartTest.CategoryTest
 
             categories.Add(category);
             categories.Add(parentCategory);
-           
+
             List<ICategory> list = category.GetParentCategories();
 
             CollectionAssert.AreEqual(list, categories);

@@ -1,10 +1,8 @@
-﻿using ShoppingCartProject.Models;
-
-namespace ShoppingCartProject.Interfaces
+﻿namespace ShoppingCartProject.Interfaces
 {
     public interface ICartLine
     {
-         IProduct Product { get; set; }
-         int Quantity { get; set; }
+        IProduct Product { get; set; }
+        int Quantity { get; set; }
     }
 }
